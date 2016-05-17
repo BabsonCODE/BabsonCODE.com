@@ -80,11 +80,35 @@ span.code {
     align-content: center;
     width: 10%;
 }
-.third{
+.third {
     width: 33%;
     float: left;
 }
-.projects-para{
+
+@media (max-width: 850px) {
+	.third {
+		width: 100%;
+		float: none;
+	}
+	.row {
+		padding:0.5em 1em;
+		text-align:center;
+	}
+	body {
+		font-size:50%;
+	}
+	p {
+		font-size:16px;
+	}
+	p.projects-para {
+	    font-size:3em;
+	}
+	.row h1 {
+		text-align:center;
+	}
+}
+
+.projects-para {
     font-size: 0.5em;
 }
 
