@@ -2,15 +2,14 @@
 	min-height:100%;
 }
 
-<<<<<<< HEAD
 #background {
-    background: url(../images/background.png);
+    background: url('../images/background.png');
     background-size: cover;
     height: 100%;
     width: 100%;
     position: fixed;
-=======
+}
+
 html, body, .container {
 	height:100%;
->>>>>>> 233b4ae048ba7174d56096c13e73506c6f8e263f
 }
