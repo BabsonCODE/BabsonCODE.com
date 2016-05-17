@@ -2,14 +2,19 @@
 	min-height:100%;
 }
 
-#background {
-    background: url('../images/background.png');
+
+.background1 {
+    background: url(../images/background.png);
     background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: fixed;
+    height: 100vh;
+    width: 100vm;
 }
 
-html, body, .container {
-	height:100%;
+
+.background2 {
+    background: black;
+    background-size: cover;
+    height: 100vh;
+    width: 100vm;
 }
+
