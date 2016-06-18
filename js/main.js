@@ -1,5 +1,5 @@
 $(function () {
-  var jqconsole = $('#console').jqconsole("In a world where technology is expanding into every field of business," + "\n" + "we work to expand students' technological skillsets to complement" + "\n" + "their entrepreneurial mindsets one </div> at a time." + "\n\n" + "Tips: Type what you need in the command line to be redirected. Type '?' if you need help. \n\n");
+  var jqconsole = $('#console').jqconsole("\n\n\n\n\n\n");
 
   function process(input){
     var parsed = input.split(" ");
@@ -20,6 +20,8 @@ $(function () {
         return text.fun();
       case "contact":
         return text.contact;
+      case "clear":
+        return text.clear();
       default:
         return text.notRight;
     }
