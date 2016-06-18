@@ -1,5 +1,5 @@
 $(function () {
-  var jqconsole = $('#console').jqconsole("\n\n\n\n\n\n\n");
+  var jqconsole = $('#console').jqconsole("\n\n\n\n\n\n\n\n");
 
   function process(input){
     var parsed = input.split(" ");
