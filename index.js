@@ -181,7 +181,7 @@ app.get('/calendar', function (req,res) {
 
 
 
-/* Start Node Server
+// Start Node Server
 var server = app.listen(8080, function () {
 
   var host = server.address().address;
@@ -189,4 +189,4 @@ var server = app.listen(8080, function () {
 
   console.log("App started on http://localhost:%s", port);
 
-});*/
+});
