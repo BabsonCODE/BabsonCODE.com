@@ -86,7 +86,12 @@ var text = {
 		return memberOutput;
 	},
 	showEvents: function () {
-		return "\nCalendar api has not been set up yet\n\n"; //API Call
+
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("GET","http://localhost:8080/calendar",false);
+		
+		xhttp.send();
+		return xhttp.responseText + "\n\n";
 	},
 	notRight: "Oops, that's not a valid command... try '?'\n",
 	clear: function() {
