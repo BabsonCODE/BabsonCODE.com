@@ -9,7 +9,7 @@ var google = require('googleapis');
 var googleAuth = require('google-auth-library');
 
 
-
+var port = process.env.PORT || 3000;
 
 
 // Express
@@ -182,11 +182,6 @@ app.get('/calendar', function (req,res) {
 
 
 // Start Node Server
-var server = app.listen(8080, function () {
-
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log("App started on http://localhost:%s", port);
-
+app.listen(port, function () {
+  console.log("App started on port " + port);
 });
