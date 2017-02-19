@@ -1,1 +1,37 @@
-/****** CUSTOM STYLES  ******/
+.logo {
+  max-height: none;
+  height: 40px;
+}
+
+nav.fixed.scrolled {
+  border-bottom: 3px solid #1E6E1E;
+}
+
+nav.transparent.fixed {
+  background: rgba(255,255,255,1);
+}
+
+.nav-bar {
+  max-height: none;
+  height: 70px;
+}
+
+.nav-bar .module, .nav-bar .module-group {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form.thirds input, form.thirds button {
+  width: 24%;
+}
+
+.twitter {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.social-media {
+  text-align: center;
+}

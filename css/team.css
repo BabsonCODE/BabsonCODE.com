@@ -1,0 +1,256 @@
+/* Member */
+
+@font-face {
+  font-family: "Distant Stroke";
+  src: url('../fonts/Distant_Stroke_Medium.otf');
+}
+
+#particles-js {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.header {
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px 20px;
+  background: -webkit-linear-gradient(350deg, rgba(36, 164, 234, 0), rgba(55, 157, 235, 0) 25%, rgba(183, 107, 240, 0));
+  background: linear-gradient(100deg, rgba(36, 164, 234, 0), rgba(55, 157, 235, 0) 25%, rgba(183, 107, 240, 0));
+  -webkit-transition: background .25s ease;
+  transition: background .25s ease;
+  z-index: 2;
+}
+
+.header .name, body .header .contact {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  line-height: 42px;
+  font-smoothing: antialiased;
+}
+
+.header .name {
+  font-weight: bold;
+}
+
+.header .contact {
+  float: right;
+}
+
+.header.bg {
+  background: -webkit-linear-gradient(350deg, #1E6E1E, #278F27 70%, #278F27);
+  background: linear-gradient(100deg, #1E6E1E, #278F27 70%, #278F27);
+}
+
+.hero {
+  overflow: hidden;
+  position: relative;
+  min-height: 200px;
+  background: #ffce54;
+  background: -webkit-linear-gradient(350deg, #1E6E1E, #278F27 70%, #278F27);
+  background: linear-gradient(100deg, #1E6E1E, #278F27 70%, #278F27);
+}
+
+.hero .w {
+  position: absolute;
+  top: 100%;
+  left: -25vw;
+  right: 0px;
+  background: url(https://i.koya.io/whitewave2.svg);
+  background-position: center;
+}
+
+.hero .wave {
+  height: 200px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.hero .wave2 {
+  height: 240px;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+  background-size: 960px 240px;
+  opacity: 0.5;
+  left: -80vw;
+  right: -5vw;
+}
+
+.hero .wave3 {
+  height: 220px;
+  -webkit-transform: translateY(-120px);
+          transform: translateY(-120px);
+  background-size: 880px 220px;
+  opacity: 0.33;
+  left: 0vw;
+  right: -20vw;
+}
+
+.hero .wave4 {
+  height: 280px;
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+  background-size: 1120px 280px;
+  opacity: 0.1;
+  left: 0vw;
+  right: -40vw;
+}
+
+.overlay:before {
+  background: transparent;
+}
+
+/* Grid */
+
+.member {
+  /*border-radius: 10px;*/
+  /*border: 2px solid #1E6E1E;*/
+}
+
+.description h5 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.project-detail {
+  overflow-y: scroll;
+  border-radius: 3px;
+  background: white;
+  background-size: 50%;
+  height: 100%;
+  padding: 30px;
+}
+
+.project-detail img {
+  width: 200px;
+}
+
+.name_and_image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.member_detail p {
+  padding: 0;
+}
+
+.interest {
+  display: inline-block;
+  width: auto;
+  padding: 4px 6px;
+  background: #1E6E1E;
+  color: white;
+  border-radius: 2px;
+  margin: 2px;
+}
+
+/* Sticky Note */
+
+/* Note styles */
+.note-wrap {
+  width: 235px;
+  min-height: 40px;
+  padding: 15px;
+  padding-top: 40px;
+  margin: 0 22px 44px 22px;
+  position: relative;
+  font-size: 45px;
+  vertical-align: top;
+  display: inline-block;
+  font-family: "Distant Stroke";
+  color: #4b453c;
+  background: #F7E999;
+  line-height: 34px;
+  text-align: center;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+.note-wrap:before {
+  display: block;
+  content: "";
+  background: rgba(227, 200, 114, 0.4);
+  width: 130px;
+  height: 28px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 6px/18px 0;
+  position: absolute;
+  top: -13px;
+  left: 50px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+.note-wrap a {
+  color: #6b824f;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.note-wrap a:hover {
+  color: #D83A25;
+}
+
+.note-yellow {
+  background: #F7E999;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.note-blue {
+  background: #b9dcf4;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+.note-pink {
+  background: #FFBDA3;
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+.note-green {
+  background: #CAF4B9;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+@media (max-width: 500px) {
+
+  .name_and_image {
+    height: 80%;
+  }
+
+  .note-wrap p {
+    font-size: 45px;
+  }
+
+}
