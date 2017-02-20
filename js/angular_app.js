@@ -154,3 +154,22 @@ app.controller('teamController',['$scope', function($scope) {
   ]
 
 }]);
+
+app.controller('upcomingEventsController', ['$scope', function($scope) {
+
+  $scope.upcomingEvents = [
+    {
+      time: '8:00pm - 9:00pm',
+      day: 'March 1st',
+      name: 'SQL Teaching Workshop',
+      description: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?'
+    },
+    {
+      time: '8:00pm - 10:00pm',
+      day: 'February 24th',
+      name: 'IFTTT Playground Event',
+      description: "Come and play with Code's IOT devices. We will be allowing individuals to work with IFTTT (if this than that) to connect devices such as motion senors and lights together."
+    }
+  ];
+
+}]);

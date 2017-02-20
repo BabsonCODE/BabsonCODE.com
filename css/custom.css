@@ -35,3 +35,27 @@ form.thirds input, form.thirds button {
 .social-media {
   text-align: center;
 }
+
+.tabs.thirds li {
+  width: 100%;
+}
+
+#upcomingEvents {
+  background: #47b475;
+  padding: 30px;
+  color: white;
+}
+
+#upcomingEvents h3 {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  section.tabs-5-1486333101811 {
+    padding: 0;
+  }
+
+  form.thirds input, form.thirds button {
+    width: 100%;
+  }
+}
